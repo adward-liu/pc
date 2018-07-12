@@ -1,0 +1,54 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.title {
+  font-family: 'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';
+  font-weight: 650;
+  font-style: normal;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.847058823529412);
+  line-height: 24px;
+  text-align: left;
+}
+
+.item {
+  display: block;
+  float: left;
+  li {
+    float: left;
+    margin-right: 100px;
+  }
+}
+
+.tool {
+  float: right;
+  display: block;
+}
+
+.subItem {
+  display: flex;
+  flex: 1;
+  justify-content: 'space-between';
+}
+
+.listContent {
+  font-size: 0;
+  width: 100%;
+  .listContentItem {
+    @var: 80px;
+    width: calc(~'100% - 40px');
+    color: @text-color-secondary;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: @font-size-base;
+    margin-left: 40px;
+    > span {
+      line-height: 20px;
+    }
+    > p {
+      margin-top: 4px;
+      margin-bottom: 0;
+      line-height: 22px;
+    }
+  }
+}
